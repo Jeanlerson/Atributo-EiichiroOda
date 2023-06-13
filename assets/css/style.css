@@ -35,8 +35,8 @@ header{
 #imagen img{
     border-radius: 100px;
     border: 2px solid #000;
-    width: 100%;
-    height: 100%;
+    width: 550px;
+    height: 550px;
 }
 
 #imagen figcaption {
@@ -59,7 +59,7 @@ header{
 }
 
 .img_pers img{
-    width: 85%;
+    width: 200px;
 }
 
 .widget{
@@ -107,43 +107,61 @@ article img{
     display: flex;
 }
 
-.obras_img img{
-    width: 80%;
-}
-
 .obras_img {
     display: flex;
-    align-items: center;
     flex-direction: column;
-    flex: 2;
-    justify-content: center;
 }
 
-.obras_img figure {
-    color: #fff;
-    margin: 0px;
-    text-align: center;
+.logo_obras img{
+    width: 800px;
+}
+.logo_obras{
     display: flex;
-    flex-direction: column;
-    align-items: center;
+    justify-content: center;
+    margin-top: 15px;
 }
 
-.obras_img a {
-    text-decoration: none;
-    border-radius: 50px;
-    border: 2px solid #fff;
-    padding: 10px;
-    margin-right: 20px;
+.historia_de_vida {
     background-color: #d53333;
+    padding: 15px;
+    border-radius: 10px;
+    margin-right: 30px;
+    margin-top: 42px;
+    text-align: center;
+    font-family: sans-serif;
+}
+.historia_de_vida h1{
+    font-size: 30px;
+}
+.historia_de_vida p {
+    text-align: justify;
+    font-size: 20px;
 }
 
 footer {
-    height: 80px;
+    height: 100px;
     background-color: #1e1e1e;
     display: flex;
     align-items: center;
     justify-content: center;
+}
+.rodape_minhas_redes {
+    align-items: center;
+    justify-content: center;
     flex-direction: column;
+    padding-right: 10px;
+    border-right: 1px dotted #5c5c5c;
+}
+.rodape_fontes {
+    margin-left: 10px;
+    margin-top: -25px;
+}
+.rodape_fontes a {
+    text-decoration: none;
+    color: #5c5c5c;
+}
+#wiki {
+    margin-left: 50px;
 }
 
 .footer_copy {
@@ -174,4 +192,54 @@ footer {
 }
 #git {
     width: 48px;
+}
+
+
+/*----------------------------------------VARIAÇÃO--------------------------------------*/
+.variacao1_banner {
+    display: none;
+}
+
+.historia_de_vida_variacao {
+    background-color: #de7575;
+    padding: 15px;
+    border-radius: 10px;
+    margin-right: 30px;
+    margin-top: 10px;
+    text-align: center;
+    font-family: sans-serif;
+    border: 2px solid #000;
+}
+.historia_de_vida_variacao h1{
+    font-size: 20px;
+}
+.historia_de_vida_variacao p {
+    text-align: justify;
+    font-size: 15px; 
+}
+#nome_eiichiro {
+    width: 520px;
+}
+#img_nome_eiichiro {
+    display: flex;
+    justify-content: center;
+    margin-top: 100px;
+}
+
+
+/*---------------------------------------------------------------------------------------*/
+
+@media (max-width: 1315px) {
+    .logo_obras img{
+        width: 600px;
+    }
+}
+
+@media (max-width: 1215px)  {
+    .variacao1_banner {
+        display: flex;
+    }
+    .banner {
+        display: none;
+    }
 }
