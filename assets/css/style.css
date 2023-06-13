@@ -305,3 +305,16 @@ footer {
         align-items: center;
     }
 }
+
+@media (max-width: 815px) {
+    .widget {
+        width: 500px;
+    }
+    .logo_obras img{
+        width: 300px;
+    }
+    article img{
+        max-width: 140px;
+        min-width: 140px;
+    }
+}
