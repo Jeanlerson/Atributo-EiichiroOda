@@ -318,3 +318,48 @@ footer {
         min-width: 140px;
     }
 }
+
+@media (max-width: 610px) {
+    .container {
+        width: 300px;
+    }
+    .title h2 {
+        display: none;
+    }
+
+    #imagen img {
+        width: 300px;
+        height: 300px;
+    }
+    #imagen {
+        height: auto;
+        margin-top: 10px;
+    }
+    .historia_de_vida_variacao h1{
+        font-size: 15px;
+    }
+    .historia_de_vida_variacao p {
+        font-size: 12px;
+    }
+
+    .widget {
+        width: 300px;
+    }
+    article img{
+        max-width: 80px;
+        min-width: 80px;
+    }  
+}
+
+@media (max-width: 500px) {
+    footer {
+        flex-direction: column-reverse;
+        height: 200px;
+    }
+    .rodape_fontes {
+        margin-bottom: 10px;
+    }
+    .rodape_minhas_redes {
+        border-right: 0px;
+    }
+}
