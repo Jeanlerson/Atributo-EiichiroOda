@@ -204,7 +204,6 @@ footer {
     background-color: #de7575;
     padding: 15px;
     border-radius: 10px;
-    margin-right: 30px;
     margin-top: 10px;
     text-align: center;
     font-family: sans-serif;
@@ -236,10 +235,73 @@ footer {
 }
 
 @media (max-width: 1215px)  {
+    .container {
+        width: 1000px;
+    }
     .variacao1_banner {
         display: flex;
     }
     .banner {
         display: none;
+    }
+    .historia_de_vida {
+        display: none;
+    }
+    section {
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+    .widget {
+        justify-content: center;
+        width: 800px;
+        background-color: #d53333;
+        border: 2px solid #fff;
+        border-radius: 20px;
+        margin-bottom: 30px;
+        margin-top: 30px;
+    }
+    .obras figure {
+        background-color: #000;
+    }
+    
+}
+
+@media (max-width: 1005px) {
+    .container {
+        width: 600px;
+    }
+    .variacao1_banner {
+        display: block;
+    }
+    #img_nome_eiichiro {
+        display: none;
+    }
+    .historia_de_vida_variacao {
+        margin-top: 10px;
+    }
+    .historia_de_vida_variacao h1{
+        font-size: 25px;
+    }
+    .historia_de_vida_variacao p {
+        font-size: 20px;
+    }
+    #imagen img {
+        width: 400px;
+        height: 400px;
+        margin-bottom: 10px;
+    }
+    #imagen {
+        margin-top: 0px;
+    }
+    .imagen_de_oda {
+        display: flex;
+        justify-content: center;
+    }
+    .imagen_de_oda figure {
+        margin: 0px;
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        align-items: center;
     }
 }
